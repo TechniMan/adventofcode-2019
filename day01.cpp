@@ -6,7 +6,7 @@ int fuelRequirement(int mass) {
 
 int main(int argc, char** args) {
 	uint totalFuel = 0U;
-	std::ifstream file("masses.txt");
+	std::ifstream file("day01input.txt");
 	while (!file.bad() && !file.eof()) {
 		std::string in = readline(file);
 		if (in.size() > 0) {
@@ -22,6 +22,7 @@ int main(int argc, char** args) {
 			}
 		}
 	}
+	file.close();
 
 	std::cout << "Total fuel required: " << totalFuel << std::endl;
 }
