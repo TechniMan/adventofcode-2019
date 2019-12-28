@@ -1,4 +1,4 @@
-#include "util.hpp"
+#include "../util.hpp"
 
 std::vector<std::string> memory;
 int getvalueat(uint index) { return std::stoi(memory[index]); }

@@ -1,4 +1,4 @@
-#include "util.hpp"
+#include "../util.hpp"
 
 int fuelRequirement(int mass) {
 	return (int)std::floor(mass / 3.0) - 2;
