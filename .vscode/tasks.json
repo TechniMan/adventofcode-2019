@@ -8,10 +8,11 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-std=c++17"
             ],
             "options": {
-                "cwd": "/usr/bin"
+                "cwd": "${fileDirname}"
             }
         }
     ],

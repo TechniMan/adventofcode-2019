@@ -3,6 +3,11 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include <map>
+#include <unordered_map>
+#include <set>
+#include <unordered_set>
+#include <algorithm>
 #include <cmath>
 
 std::string readline(std::istream& inStream) {
@@ -10,7 +15,7 @@ std::string readline(std::istream& inStream) {
 	std::getline(inStream, result);
 	return result;
 }
-const uint maxReadLength = 1024U;
+const uint maxReadLength = 1536U;
 char* readlineC(std::istream& inStream) {
 	char* result = new char[maxReadLength];
 	inStream.getline(result, maxReadLength);
